@@ -7,10 +7,11 @@ const getRoot = (id) => {
   if (n[id] === id)
     return id
 
-  const resID = getRoot(n[id])
-  n[id] = resID
+  const rootID = getRoot(n[id])
+  n[id] = rootID
+  treesWeight[rootID]++
 
-  return resID
+  return rootID
 }
 
 const checkConnection = (id1, id2) =>
@@ -24,7 +25,7 @@ const unite = (id1, id2) => {
   !treesWeight[rootID] &&
     (treesWeight[rootID] = 0)
 
-  ++treesWeight[rootID]
+  treesWeight[rootID]++
 }
 
 unite(0, 1)
