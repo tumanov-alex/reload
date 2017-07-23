@@ -9,7 +9,6 @@ const getRoot = (id) => {
 
   const rootID = getRoot(n[id])
   n[id] = rootID
-  treesWeight[rootID]++
 
   return rootID
 }
