@@ -6,6 +6,7 @@ module.exports = {
     publicPath: "/static/"
   },
 
+  devtool: "cheap-module-eval-source-map",
   module: {
     loaders: [{
       test: /\.js$/,
