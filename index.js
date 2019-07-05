@@ -1,1 +1,2 @@
-require('./src/first');
+require('./src/removeElement')
+// require('./src/mergeSort')
